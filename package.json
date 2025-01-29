@@ -1,0 +1,21 @@
+{
+  "name": "automation-framework-playwright-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "report:generate": "allure generate ./allure-results -o ./allure-report --clean",
+    "report:open": "allure open ./allure-report",
+    "test:report": "npm run test && npm run report:generate && npm run report:open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@types/node": "^22.10.10",
+    "allure-commandline": "^2.32.0",
+    "allure-playwright": "^3.0.9"
+  }
+}
