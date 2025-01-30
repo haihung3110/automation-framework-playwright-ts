@@ -1,21 +1,24 @@
 {
   "name": "automation-framework-playwright-ts",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test",
-    "report:generate": "allure generate ./allure-results -o ./allure-report --clean",
-    "report:open": "allure open ./allure-report",
-    "test:report": "npm run test && npm run report:generate && npm run report:open"
+    "test": "cucumber-js test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
     "@playwright/test": "^1.50.0",
-    "@types/node": "^22.10.10",
-    "allure-commandline": "^2.32.0",
-    "allure-playwright": "^3.0.9"
+    "@types/node": "^22.12.0",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "fs-extra": "^11.3.0",
+    "multiple-cucumber-html-reporter": "^3.9.0",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "ts-node": "^10.9.2",
+    "winston": "^3.17.0"
   }
 }
